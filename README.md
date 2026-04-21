@@ -21,7 +21,7 @@
 $ ./FindAsreproastables -h
 FindAsreproastables - by Remi GASCOU (Podalirius) @ TheManticoreProject - v1.0.0
 
-Usage: FindAsreproastables --domain <string> --username <string> [--password <string>] [--hashes <string>] [--debug] [--print-spns] --dc-ip <string> [--ldap-port <tcp port>] [--use-ldaps] [--use-kerberos]
+Usage: FindAsreproastables --domain <string> --username <string> [--password <string>] [--hashes <string>] [--debug] --dc-ip <string> [--ldap-port <tcp port>] [--use-ldaps] [--use-kerberos]
 
   Authentication:
     -d, --domain <string>   Active Directory domain to authenticate to.
