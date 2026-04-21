@@ -32,10 +32,10 @@ var (
 
 func parseArgs() {
 	ap := parser.ArgumentsParser{
-		Banner:           "FindAsreproastables - by Remi GASCOU (Podalirius) @ TheManticoreProject - v1.0.0",
-		ShowBannerOnHelp: true,
-		ShowBannerOnRun:  true,
+		Banner: "FindAsreproastables - by Remi GASCOU (Podalirius) @ TheManticoreProject - v1.0.0",
 	}
+	ap.SetOptShowBannerOnHelp(true)
+	ap.SetOptShowBannerOnRun(true)
 
 	// Configuration flags
 	group_config, err := ap.NewArgumentGroup("Configuration")
