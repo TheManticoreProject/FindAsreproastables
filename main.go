@@ -81,11 +81,13 @@ func main() {
 	success, err := ldapSession.Connect()
 	if !success {
 		logger.Warn(fmt.Sprintf("%s\n", err))
+		return
 	}
 
 	Asreproastables, err := core.GetAsreproastables(ldapSession)
 	if err != nil {
 		logger.Warn(fmt.Sprintf("%s\n", err))
+		return
 	}
 
 	lenAsreproastables := len(Asreproastables)
