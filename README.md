@@ -49,6 +49,3 @@ $
 
 Pull requests are welcome. Feel free to open an issue if you want to add other features.
 
-## Credits
-  - [Remi GASCOU (Podalirius)](https://github.com/p0dalirius) for the creation of the [FindAsreproastables](https://github.com/p0dalirius/FindAsreproastables) project before transferring it to TheManticoreProject.
-
