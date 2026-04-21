@@ -14,8 +14,7 @@ import (
 
 var (
 	// Configuration
-	debug     bool
-	printSPNs bool
+	debug bool
 
 	// Authentication
 	authDomain   string
