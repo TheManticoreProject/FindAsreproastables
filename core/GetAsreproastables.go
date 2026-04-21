@@ -10,11 +10,6 @@ import (
 func GetAsreproastables(ldapSession ldap.Session) ([]string, error) {
 	results := []string{}
 
-	success, err := ldapSession.Connect()
-	if !success {
-		return results, fmt.Errorf("error connecting to LDAP: %s", err)
-	}
-
 	query := "(&"
 	query += "(|"
 	query += "(objectClass=computer)"
@@ -31,8 +26,6 @@ func GetAsreproastables(ldapSession ldap.Session) ([]string, error) {
 	for _, entry := range searchResults {
 		results = append(results, entry.DN)
 	}
-
-	ldapSession.Close()
 
 	return results, nil
 }
